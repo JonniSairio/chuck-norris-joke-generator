@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Do+Hyeon&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./norrisbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: inset 0 200000px rgb(0 0 0 / 40%);
+  letter-spacing: 1.2px;
+}
+
+.joke-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 3rem 5rem;
+  background-color: rgba(0, 0, 0, 0.931);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.joke-container h2 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px #111;
+  background-color: #ff3d3d;
+  border-radius: 10px;
+  padding: 1rem 5rem;
+}
+
+.joke-container p {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+button {
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 5px #111;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+  background-color: #ff3d3d;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 3rem;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #111;
+  text-shadow: none;
+}
+
+@media (max-width: 1200px) {
+  .joke-container {
+    max-width: 600px;
+  }
+  .joke-container h2 {
+    font-size: 2rem;
+  }
+  .joke-container p {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .joke-container {
+    max-width: 350px;
+  }
+  .joke-container h2 {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0.5rem;
+  }
+  .joke-container p {
+    font-size: 1.2rem;
+  }
+  button {
+    margin-top: 0;
+  }
+}
