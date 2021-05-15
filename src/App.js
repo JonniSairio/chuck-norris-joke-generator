@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const App = () => {
-  const API_URL = 'http://api.icndb.com/jokes/random';
+  const API_URL = 'https://api.icndb.com/jokes/random';
 
   const [joke, setJoke] = useState('');
   const generateJoke = () => {
